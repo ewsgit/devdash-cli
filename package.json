@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "tsc"
   },
   "repository": {
     "type": "git",
@@ -14,10 +14,23 @@
     "cli",
     "devdash"
   ],
+  "bin": {
+    "devdash-cli": "./index.js",
+    "d": "./index.js"
+  },
   "author": "ewsgit",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/ewsgit/devdash-cli/issues"
   },
-  "homepage": "https://github.com/ewsgit/devdash-cli#readme"
+  "type": "module",
+  "homepage": "https://github.com/ewsgit/devdash-cli#readme",
+  "dependencies": {
+    "@types/chalk": "^2.2.0",
+    "@types/inquirer": "^8.2.0",
+    "@types/node": "^17.0.17",
+    "chalk": "^5.0.0",
+    "inquirer": "^8.2.0",
+    "typescript": "^4.5.5"
+  }
 }
