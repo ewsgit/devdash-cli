@@ -15,8 +15,8 @@
     "devdash"
   ],
   "bin": {
-    "devdash-cli": "./index.js",
-    "d": "./index.js"
+    "devdash-cli": "node ./index.js",
+    "d": "node ./index.js"
   },
   "author": "ewsgit",
   "license": "MIT",
